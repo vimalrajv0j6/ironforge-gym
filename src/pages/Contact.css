@@ -1,0 +1,91 @@
+.contact__layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+/* Info side */
+.contact__info { display: flex; flex-direction: column; gap: 1.8rem; }
+.contact__info-item { display: flex; gap: 1rem; align-items: flex-start; }
+.contact__info-icon {
+  width: 44px;
+  height: 44px;
+  background: rgba(232,0,13,0.08);
+  border: 1px solid rgba(232,0,13,0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  flex-shrink: 0;
+}
+.contact__info-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.35rem;
+}
+.contact__info-value { color: #bbb; font-size: 1.05rem; line-height: 1.7; }
+.contact__info-extra { color: var(--red); font-size: 0.95rem; font-weight: 700; margin-top: 0.3rem; }
+
+/* Map */
+.contact__map {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 140px;
+}
+.contact__map-inner { text-align: center; }
+
+/* Form side */
+.contact__form-card {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  padding: 2.5rem;
+}
+.contact__form-title {
+  font-family: var(--bebas);
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.8rem;
+}
+
+.contact__form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+.contact__form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+.contact__form-group:last-of-type { margin-bottom: 0; }
+
+.input--error { border-color: var(--red) !important; }
+.contact__field-error {
+  font-size: 0.85rem;
+  color: var(--red);
+  letter-spacing: 0.5px;
+}
+
+.contact__submit-btn {
+  width: 100%;
+  margin-top: 1.6rem;
+  font-size: 1.05rem;
+}
+
+@media(max-width: 900px) {
+  .contact__layout { grid-template-columns: 1fr; }
+}
+@media(max-width: 480px) {
+  .contact__form-row { grid-template-columns: 1fr; }
+  .contact__form-card { padding: 1.5rem; }
+}

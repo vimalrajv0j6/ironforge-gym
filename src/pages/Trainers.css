@@ -1,0 +1,117 @@
+.trainers__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.trainer-card {
+  background: #111;
+  border: 1px solid #1e1e1e;
+  overflow: hidden;
+  cursor: pointer;
+  transition: border-color 0.25s, transform 0.25s;
+}
+.trainer-card:hover { border-color: #333; transform: translateY(-4px); }
+.trainer-card.active { border-color: var(--red); transform: none; }
+
+.trainer-card__avatar {
+  width: 100%;
+  aspect-ratio: 4/3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.trainer-card__initials {
+  font-family: var(--bebas);
+  font-size: 5rem;
+  color: rgba(255,255,255,0.12);
+  letter-spacing: 4px;
+}
+
+.trainer-card__info { padding: 1.4rem; }
+.trainer-card__name {
+  font-family: var(--bebas);
+  font-size: 1.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 0.2rem;
+}
+.trainer-card__specialty {
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.8rem;
+}
+.trainer-card__meta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  color: #777;
+}
+
+.trainer-card__detail {
+  padding: 0 1.4rem 1.4rem;
+  border-top: 1px solid #1e1e1e;
+  animation: slideDown 0.2s ease;
+}
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.trainer-card__bio {
+  color: #999;
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.trainer-card__certs-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--gray);
+  margin-bottom: 0.6rem;
+}
+.trainer-card__certs {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.4rem;
+}
+.trainer-card__certs li {
+  font-size: 1rem;
+  color: #bbb;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.trainer-card__certs li::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: rgba(232,0,13,0.15);
+  border: 1px solid var(--red);
+  flex-shrink: 0;
+}
+
+.trainer-card__book-btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  font-family: var(--barlow);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  clip-path: polygon(8px 0%, 100% 0%, calc(100% - 8px) 100%, 0% 100%);
+  transition: background 0.2s;
+}
+.trainer-card__book-btn:hover { background: var(--red2); }
