@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ironforge-gym/static/css/main.2a836cec.css",
-    "main.js": "/ironforge-gym/static/js/main.15db55da.js",
+    "main.js": "/ironforge-gym/static/js/main.b71fdf91.js",
     "static/media/QR.jpeg": "/ironforge-gym/static/media/QR.7585d238262298b66b97.jpeg",
     "static/media/gym.jpg": "/ironforge-gym/static/media/gym.172a5a16c1bcb58a16f4.jpg",
     "index.html": "/ironforge-gym/index.html",
     "main.2a836cec.css.map": "/ironforge-gym/static/css/main.2a836cec.css.map",
-    "main.15db55da.js.map": "/ironforge-gym/static/js/main.15db55da.js.map"
+    "main.b71fdf91.js.map": "/ironforge-gym/static/js/main.b71fdf91.js.map"
   },
   "entrypoints": [
     "static/css/main.2a836cec.css",
-    "static/js/main.15db55da.js"
+    "static/js/main.b71fdf91.js"
   ]
 }
